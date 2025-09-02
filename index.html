@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Grover - Resume</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .section-title {
+            position: relative;
+            font-weight: 700;
+            color: #1e3a8a;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            height: 3px;
+            width: 50px;
+            background-color: #3b82f6;
+            border-radius: 9999px;
+        }
+        .skill-bar {
+            height: 8px;
+            background-color: #e5e7eb;
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+        .skill-level {
+            height: 100%;
+            background-color: #3b82f6;
+            transition: width 0.5s ease-in-out;
+        }
+        .icon-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem;
+            background-color: #f9fafb;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .icon-card:hover {
+            transform: translateY(-5px);
+        }
+        .achievement-card {
+            background-color: #fff;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .achievement-card:hover {
+            transform: scale(1.03);
+        }
+        .list-disc-outside ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+    </style>
+</head>
+<body class="text-gray-800 p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden my-8">
+        <div class="p-8">
+            <!-- Header Section -->
+            <div class="text-center mb-10">
+                <h1 class="text-4xl font-extrabold text-gray-900">Yash Grover</h1>
+                <p class="text-xl text-indigo-600 mt-2">Program Manager</p>
+                <div class="flex flex-col md:flex-row justify-center items-center mt-4 space-y-2 md:space-y-0 md:space-x-4 text-gray-600">
+                    <span>+91-7042467407</span>
+                    <span>yashgrover1917@gmail.com</span>
+                    <a href="https://www.linkedin.com/in/yash-g-267023105/" target="_blank" class="text-indigo-500 hover:underline">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Summary Section -->
+            <section class="mb-8">
+                <h2 class="section-title">Profile Summary</h2>
+                <p class="text-base text-gray-700 leading-relaxed">
+                    Results-oriented Program Manager with over 4 years of experience and a strong foundation in **Business Strategy, Stakeholder Collaboration, and Structured Planning** across dynamic, fast-paced environments. Adept at aligning cross-functional teams to organizational goals, ensuring timely delivery of projects through **agile methodology** and process optimization. Skilled in Go-to-Market (GTM) planning, customer journey mapping, and strategic execution to support high-impact project launches and enhance market penetration. Proficient in project management tools, Advanced Excel, and SQL, with a strong ability to create and analyze performance dashboards to deliver actionable business insights to leadership teams.
+                </p>
+            </section>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Core Competencies Section -->
+                <div class="col-span-2">
+                    <section>
+                        <h2 class="section-title">Core Competencies</h2>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-sm text-gray-700">
+                            <div class="icon-card">
+                                <span class="text-2xl mb-2">📈</span>
+                                <span>Process Improvement</span>
+                            </div>
+                            <div class="icon-card">
+                                <span class="text-2xl mb-2">🤝</span>
+                                <span>Stakeholder Mgt.</span>
+                            </div>
+                            <div class="icon-card">
+                                <span class="text-2xl mb-2">🚀</span>
+                                <span>GTM Planning</span>
+                            </div>
+                            <div class="icon-card">
+                                <span class="text-2xl mb-2">🧠</span>
+                                <span>Strategic Planning</span>
+                            </div>
+                            <div class="icon-card">
+                                <span class="text-2xl mb-2">📊</span>
+                                <span>Performance Metrics</span>
+                            </div>
+                            <div class="icon-card">
+                                <span class="text-2xl mb-2">🔄</span>
+                                <span>Change Management</span>
+                            </div>
+                            <div class="icon-card">
+                                <span class="text-2xl mb-2">🛡️</span>
+                                <span>Risk Mitigation</span>
+                            </div>
+                            <div class="icon-card">
+                                <span class="text-2xl mb-2">💰</span>
+                                <span>Financial Analysis</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Technical Skills & Education -->
+                <div>
+                    <section class="mb-8">
+                        <h2 class="section-title">Technical Skills</h2>
+                        <div class="space-y-4">
+                            <div class="space-y-1">
+                                <h4 class="font-semibold text-gray-700">Project Planning Tools</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="space-y-1">
+                                <h4 class="font-semibold text-gray-700">SQL</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="space-y-1">
+                                <h4 class="font-semibold text-gray-700">Advanced Excel</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="space-y-1">
+                                <h4 class="font-semibold text-gray-700">Google Sheets Automation</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title">Education</h2>
+                        <div class="text-sm text-gray-700">
+                            <h4 class="font-bold">MBA, Marketing</h4>
+                            <p>IBS Hyderabad</p>
+                            <h4 class="font-bold mt-2">B.Com.</h4>
+                            <p>Sri Aurobindo College</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Key Achievements Section -->
+            <section class="mb-8">
+                <h2 class="section-title">Key Achievements at a Glance</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="achievement-card">
+                        <div class="flex flex-col items-center">
+                            <span class="text-5xl font-extrabold text-green-600">50%</span>
+                            <p class="mt-2 text-sm font-semibold text-gray-600">Business Growth</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="flex flex-col items-center">
+                            <span class="text-5xl font-extrabold text-blue-600">20%</span>
+                            <p class="mt-2 text-sm font-semibold text-gray-600">Cost Reduction</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="flex flex-col items-center">
+                            <span class="text-5xl font-extrabold text-purple-600">60%</span>
+                            <p class="mt-2 text-sm font-semibold text-gray-600">Deliverability Improvement</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Work Experience Section -->
+            <section class="mb-8">
+                <h2 class="section-title">Work Experience</h2>
+                <!-- Ambak -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-bold text-gray-900">Program Manager</h3>
+                    <p class="text-sm text-gray-600">Ambak, Gurugram | Feb 2025 - Present</p>
+                    <ul class="list-disc-outside ul mt-2 text-gray-700 space-y-1 text-sm">
+                        <li>Collaborated with cross-functional stakeholders to define and streamline project workflows and data flow.</li>
+                        <li>Led the development of end-to-end (E2E) customer journey frameworks across multiple departments to align objectives and drive sales performance.</li>
+                        <li>Integrated insights from customer journey mapping to optimize business processes and strategic initiatives.</li>
+                    </ul>
+                </div>
+                <!-- College Dunia -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-bold text-gray-900">Program Manager</h3>
+                    <p class="text-sm text-gray-600">College Dunia, Gurugram | Jan 2024 - Feb 2025</p>
+                    <ul class="list-disc-outside ul mt-2 text-gray-700 space-y-1 text-sm">
+                        <li>Collaborated with cross-functional stakeholders to streamline project planning and execution, ensuring data accuracy and enhancing decision-making processes.</li>
+                        <li>Led the development of the end-to-end (E2E) customer journey framework, aligning departmental goals to improve customer experience and drive sales performance across multiple business units.</li>
+                    </ul>
+                </div>
+                <!-- BriBooks and LeapLearner -->
+                <div>
+                    <h3 class="text-lg font-bold text-gray-900">Senior Business Operation Manager</h3>
+                    <p class="text-sm text-gray-600">BriBooks and LeapLearner, Gurugram | Mar 2021 - Jan 2024</p>
+                    <ul class="list-disc-outside ul mt-2 text-gray-700 space-y-1 text-sm">
+                        <li>Spearheaded comprehensive business process analysis initiatives aimed at identifying inefficiencies and implementing digital solutions that drive substantial growth.</li>
+                        <li>Developed and presented performance reports to provide stakeholders with actionable insights and facilitate informed decision-making.</li>
+                        <li>Administered the entire project lifecycle, ensuring effective go-to-market strategies are executed and sustained engagement is maintained.</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</body>
+</html>
